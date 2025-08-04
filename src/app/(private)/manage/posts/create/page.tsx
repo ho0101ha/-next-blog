@@ -6,10 +6,8 @@ import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import TextareaAutosize from "react-textarea-autosize";
 import "highlight.js/styles/github.css"; // コードハイライト用のスタイル
-// import {error} from "console";
 import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
-// import Markdown from "react-markdown";
 import {Button} from "@/components/ui/button";
 
 export default function CreatePage() {
@@ -64,7 +62,7 @@ export default function CreatePage() {
                 )}
         </div>
         <div className="text-right text-sm text-gray-500 mt-1">
-          文字数:{content.length}
+          文字数:{contentLength}
         </div>
         <div>
           <Button type="button" onClick={() => setPreview(!preview)}>
