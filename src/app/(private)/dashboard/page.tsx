@@ -1,8 +1,7 @@
-
+import { getOwnPosts } from "@/lib/ownPost"
 import { auth } from '@/auth'
 import PostDropdownMenu from "@/components/post/PostDropdownMenu"
 import { Button } from '@/components/ui/button'
-import { getOwnPosts } from '@/lib/ownPost'
 import Link from 'next/link'
 
 export default async function DashBoardPage() {

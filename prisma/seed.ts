@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import * as bcrypt from 'bcryptjs'
+import * as bcypt from 'bcryptjs'
 
 const prisma = new PrismaClient()
 
@@ -8,7 +8,7 @@ async function main(){
     await prisma.post.deleteMany()
     await prisma.user.deleteMany()
 
-    const hashedPassword = await bcrypt.hash('password123', 12)
+    const hashedPassword = await bcypt.hash('password123', 12)
 
 
     // ダミー画像URL
