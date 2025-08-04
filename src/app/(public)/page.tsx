@@ -1,7 +1,7 @@
 import PostCard from "@/components/post/PostCard";
 import { getPosts,searchPosts } from "@/lib/post";
 import { Post } from "@/types/post";
-import Image from "next/image";
+// import Image from "next/image";
 
 type SearchParams ={
   search?:string

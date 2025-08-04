@@ -10,7 +10,7 @@ import {notFound} from "next/navigation";
 import {ja} from "date-fns/locale";
 import {format} from "date-fns";
 import { auth } from "@/auth";
-import { getOwnPost } from "@/lib/ownerPost";
+import { getOwnPost } from "@/lib/ownPost";
 
 type Params = {
   params: Promise<{id: string}>;
